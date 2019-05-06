@@ -20,7 +20,7 @@ def main():
     """ main routine """
     cats_sequence = pygame.image.load("cats.png")
     images = []
-    socre = 0
+    score = 0
     for index in range(12):
         image = pygame.Surface([400, 200], pygame.SRCALPHA, 32)
         image.blit(cats_sequence, (0, 0), Rect(0, index * 200, 400, 200))
