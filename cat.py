@@ -50,6 +50,7 @@ def main():
                         
 
         if not game_over:
+            score += 10
             move()
             if jump:
                 pos_y -= 20
