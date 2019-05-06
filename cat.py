@@ -65,7 +65,7 @@ def main():
         pygame.draw.rect(SURFACE, (255, 0, 0), (0, 0, 1080, 130))
         if game_over:
             message = myfont.render("Game Over!!", True, (0, 255, 255))
-            SURFACE.blit(message, (200, 360))
+            SURFACE.blit(message, (600, 360))
         
 
         """まず一個のブロックから作る"""
