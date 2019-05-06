@@ -68,10 +68,9 @@ def main():
         if game_over:
             message = myfont.render("Game Over!!", True, (0, 255, 255))
             SURFACE.blit(message, (600, 360))
-            
-        score_str = str(score).zfill(6)↲
-        score_message = myfont.render(score_str, True, (0, 255, 255))↲
-        SURFACE.blit(score_message, (720, 200))↲ 
+        score_str = str(score).zfill(6)
+        score_message = myfont.render(score_str, True, (0, 255, 255))
+        SURFACE.blit(score_message, (720, 200))
 
         """まず一個のブロックから作る"""
         for block in blocks:
