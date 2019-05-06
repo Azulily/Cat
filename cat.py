@@ -20,6 +20,7 @@ def main():
     """ main routine """
     cats_sequence = pygame.image.load("cats.png")
     images = []
+    socre = 0
     for index in range(12):
         image = pygame.Surface([400, 200], pygame.SRCALPHA, 32)
         image.blit(cats_sequence, (0, 0), Rect(0, index * 200, 400, 200))
@@ -66,7 +67,10 @@ def main():
         if game_over:
             message = myfont.render("Game Over!!", True, (0, 255, 255))
             SURFACE.blit(message, (600, 360))
-        
+            
+        score_str = str(score).zfill(6)↲
+        score_message = myfont.render(score_str, True, (0, 255, 255))↲
+        SURFACE.blit(score_message, (720, 200))↲ 
 
         """まず一個のブロックから作る"""
         for block in blocks:
